@@ -30,24 +30,6 @@ if (isset($_POST["name"])) {
 ?> 
 
 
-<html>
-    <head>
-        <title>The Generics | Store</title>
-        <meta name="description" content="This is the description">
-        <link rel="stylesheet" href="styles.css" />
-        <script src="store.js" async></script>
-    </head>
-    <body>
-        <header class="main-header">
-            <nav class="main-nav nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-            </nav>
-            <h1 class="band-name band-name-large">The Generics</h1>
-        </header>
         <section class="container content-section">
             <h2 class="section-header">MUSIC</h2>
             <div class="shop-items">
