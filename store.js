@@ -105,4 +105,16 @@ function updateCartTotal() {
 
 
 // D added
-
+function sendEmail() {
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "rsoproduct@gmail.com",
+	Password : "8C102055A648AFA2A188EC520FF527E22138",
+	To : 'rsoproduct@gmail.com',
+	From : "rsoproduct@gmail.com",
+	Subject : "Test smtp",
+	Body : "Testing email",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+}
