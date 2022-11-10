@@ -120,5 +120,5 @@ function sendEmail() {Email.send({
 .then(function (message) {
 alert("Mail has been sent successfully")
 });
-}	
-}
+}		
+
