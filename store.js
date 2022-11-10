@@ -104,13 +104,21 @@ function updateCartTotal() {
 
 
 
-// Darko added
-function sendMail() {
-    var link = "mailto:info@bodemai.nl"
-             + "?cc=darko1988@live.nl"
-             + "&subject=" + encodeURIComponent("This is my subject")
-             + "&body=" + encodeURIComponent(document.getElementById('myText').value)
-    ;
-    
-    window.location.href = link;
+// D added
+
+function sendEmail() {Email.send({
+		SecureToken : "aa585c6c-c58e-4cfb-9ecc-109c26d194a3",
+		To : 'rsoproduct@gmail.com',
+		From : "rsoproduct@gmail.com",
+		Subject: "Sending Email using javascript with SMTPJS",
+		Body: "If you are reading this, dont forget to applaud kaustubh72",
+		Attachments: [{
+		name: "File_Name_with_Extension",
+		path: "Full Path of the file"
+		}]
+	})
+.then(function (message) {
+alert("Mail has been sent successfully")
+});
+}	
 }
