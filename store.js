@@ -101,3 +101,16 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+
+
+
+// Darko added
+function sendMail() {
+    var link = "mailto:info@bodemai.nl"
+             + "?cc=darko1988@live.nl"
+             + "&subject=" + encodeURIComponent("This is my subject")
+             + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+    ;
+    
+    window.location.href = link;
+}
