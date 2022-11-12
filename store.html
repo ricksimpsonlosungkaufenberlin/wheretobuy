@@ -3,117 +3,463 @@
     <head>
         <title>The Generics | Store</title>
         <meta name="description" content="This is the description">
-        <link rel="stylesheet" href="styles.css" />
-        <script src="store.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+        <script src="store.js" async></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript">var submitted=false;</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" async></script>
+        <!-- <script type="text/javascript">
+        // $('#gform').on('submit', function(e) {
+        // $('#gform *').fadeOut(2000);
+        // $('#gform').prepend('Your submission has been processed...');
+        // });
+        </script> -->
     </head>
     <body>
-        <header class="main-header">
-            <nav class="main-nav nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-					<li><a href="store.php">STORE PHP</a></li>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="store.html">Store</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="store.html">Store</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
                 </ul>
-            </nav>
-            <h1 class="band-name band-name-large">The Generics</h1>
-        </header>
-		
-		
-		
-        <section class="container content-section">
-            <h2 class="section-header">MUSIC</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 1</span>
-                    <img class="shop-item-image" src="Images/Album 1.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 2</span>
-                    <img class="shop-item-image" src="Images/Album 2.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$14.99</span>
-                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 3</span>
-                    <img class="shop-item-image" src="Images/Album 3.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$9.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 4</span>
-                    <img class="shop-item-image" src="Images/Album 4.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-        </section>
+          </nav>
+
+		
+
+
+<!-- CART         -->
         <section class="container content-section">
-            <h2 class="section-header">MERCH</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">T-Shirt</span>
-                    <img class="shop-item-image" src="Images/Shirt.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Coffee Cup</span>
-                    <img class="shop-item-image" src="Images/Cofee.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container content-section">
-            <h2 class="section-header">CART</h2>
+            <h2 class="section-header">ORDER FORM</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-sku cart-header cart-column">SKU</span>
                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
-            <div class="cart-items">
+            <!-- All cart items Adding already on first load-->
+            <div class="cart-items"> 
+                
+                <!-- C0501 -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                    <span class="cart-item-title">5% CBD Drops - Hemp Seed Oil</span>
+                </div>
+                <span class="cart-price cart-column">€30</span>
+                <span class="cart-sku cart-column">C0501nor</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- C0502bs -->
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                        <span class="cart-item-title">5% CBD Drops - Black Seed Oil</span>
+                    </div>
+                    <span class="cart-price cart-column">€30.00</span>
+                    <span class="cart-sku cart-column">C0502bs</span>
+                    <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="0">
+                    <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                    </div>
+                </div>
+
+                <!-- C1001nor -->
+                <div class="cart-row">
+                  <div class="cart-item cart-column">
+                      <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                      <span class="cart-item-title">10% CBD Drops - Hemp Seed Oil</span>
+                  </div>
+                  <span class="cart-price cart-column">€50.00</span>
+                  <span class="cart-sku cart-column">C1001nor</span>
+                  <div class="cart-quantity cart-column">
+                  <input class="cart-quantity-input" type="number" value="0">
+                  <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                  </div>
+                </div>
+
+                <!-- C1002bs -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                    <span class="cart-item-title">10% CBD Drops - Black Seed Oil</span>
+                </div>
+                <span class="cart-price cart-column">€50.00</span>
+                <span class="cart-sku cart-column">C1002bs</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- C2001 -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                  <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                  <span class="cart-item-title">20% CBD Drops - Black Seed Oil</span>
+                </div>
+                <span class="cart-price cart-column">€99.00</span>
+                <span class="cart-sku cart-column">C2001</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- O503 -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">10ml RSO Tincture with Hemp Seed Oil</span>
+                </div>
+                <span class="cart-price cart-column">€30.00</span>
+                <span class="cart-sku cart-column">O503</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- A603 -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">10ml RSO Tincture with Food Graded Alcohol</span>
+                </div>
+                <span class="cart-price cart-column">€30.00</span>
+                <span class="cart-sku cart-column">A603</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- C5001 -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">50% CBD Oil 10ml (Full spectrum)</span>
+                </div>
+                <span class="cart-price cart-column">€200.00</span>
+                <span class="cart-sku cart-column">C5001</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1101m -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 3:1) 1ml, 61% RSO and 19% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€100.00</span>
+                <span class="cart-sku cart-column">1101m</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1133 -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 3:1) 10ml, 61% RSO and 19% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€600.00</span>
+                <span class="cart-sku cart-column">1133</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1133-3x -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 3:1) 30ml, 61% RSO and 19% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€1700.00</span>
+                <span class="cart-sku cart-column">1133-3x</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1133-6x -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 3:1) 60 ml (or 60gram), 61% RSO and 19% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€3000.00</span>
+                <span class="cart-sku cart-column">1133-6x</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1101rat -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 1:1) 1ml, 46% RSO and 46% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€100.00</span>
+                <span class="cart-sku cart-column">1101rat</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1133rat -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 1:1) 10ml, 46% RSO and 46% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€600.00</span>
+                <span class="cart-sku cart-column">1133rat</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1133rat-3x -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 1:1) 30ml, 46% RSO and 46% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€1700.00</span>
+                <span class="cart-sku cart-column">1133rat-3x</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+
+                <!-- 1133rat-6x -->
+                <div class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
+                <span class="cart-item-title">RSO Oil (ratio 1:1) 60 ml (or 60gram), 46% RSO and 46% CBD</span>
+                </div>
+                <span class="cart-price cart-column">€3000.00</span>
+                <span class="cart-sku cart-column">1133rat-6x</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="0">
+                <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
+                </div>
+                </div>
+                
+
             </div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$0</span>
+                <span class="cart-total-price">€0</span>
             </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            <!-- <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> -->
         </section>
 		
-		
-		
-<p>aeda	</p>
-<textarea id="myText">
-    Lorem ipsum...
-</textarea>
-<button class="btn btn-primary btn-purchase"  onclick="sendMail(); return false">Send</button>
+		<div class="cart-items">    
+</div>
+<!-- END OF CART -->
+	
 
 
-<form method="post">
-<input type="button" value="Send Mail" onclick="sendMail()" />
-</form>
+<!-- ORDER FORM -->
+ <!--CONTACT FORM MAILCHIMP	  -->
+ <div class="container">
+	<hr>
+  
+			<div id="mc_embed_signup">			
+				<!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="hidden_iframe" onsubmit="return validateEmail()">
+        <div id="mc_embed_signup_scroll">
+				<h2>Order Form Name and Address</h2>
+				<div class="indicates-required"><span class="asterisk">*</span> required</div><br>
 
-		
+    
 
-		
-		
-		
+
+        <!-- PLACE INPUT FORM -->
+
+           <!-- Name -->
+        <div class="form-group mc-field-group">
+					<label for="mce-FNAME">Name<span class="asterisk">*</span>
+				</label>
+					<input type="text" value="" name="entry.2039904732" id="entry.2039904732" class="form-control name-input"  placeholder="Your Name" required>
+					<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+				</div>
+
+        <!-- Email -->
+				<div class="form-group">
+					<label for="mce-EMAIL">Email<span class="asterisk">*</span></label>
+					<input type="email" value="" name="entry.1270148595" id="entry.1270148595" class="form-control" placeholder="Your Email address" required>
+					<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+				</div>
+
+        <!-- Phone -->
+				<div class="form-group mc-field-group size1of2">
+					<label for="mce-PHONE">Phone Number<span class="asterisk">*</span>
+					<input type="text" name="entry.802012483" id="entry.802012483"  class="form-control" value="" placeholder="Your Phone" required>
+					<span id="mce-PHONE-HELPERTEXT" class="helper_text"></span>
+				</div>		
+
+        <!-- Address -->
+				<div class="form-group mc-field-group">
+					<label for="mce-MMERGE10">Shipping Address<span class="asterisk">*</span>
+				</label>
+					<textarea type="text" rows="5" value="" name="entry.2044404204" id="entry.2044404204" class="form-control" placeholder="Your Shipping address" required></textarea>
+					<span id="mce-MMERGE10-HELPERTEXT" class="helper_text"></span>
+				</div>
+
+        <!-- Order Note (optional) -->
+				<div class="form-group mc-field-group">
+					<label for="mce-MMERGE10">Order Note (optional)</label>
+					<textarea type="text" rows="5" value="" name="entry.603949857" id="entry.603949857" class="form-control" placeholder="type here"></textarea>
+					<span id="mce-MMERGE10-HELPERTEXT" class="helper_text"></span>
+				</div>
+
+
+         <!-- -------PRODUCTS HIDDEN ------- -->
+         <!-- C0501nor -->
+        <div class="form-group mc-field-group">
+				<input type="hidden" value="" name="entry.86856500" id="entry.86856500" class="form-control product1-input" placeholder="Prodcut 1"></div>
+        <!-- C0502bs-->
+        <div class="form-group mc-field-group">
+				<input type="hidden" value="" name="entry.935907669" id="entry.935907669" class="form-control product1-input" placeholder="Prodcut 1"></div>
+        <!-- C1001nor-->
+        <div class="form-group mc-field-group">
+        <input type="hidden" value="" name="entry.1537239891" id="entry.1537239891" class="form-control product1-input" placeholder="Prodcut 1"></div>
+        <!-- C1002bs-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.57361277" id="entry.57361277" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- C2001-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.868617270" id="entry.868617270" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- O503-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.655648236" id="entry.655648236" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- A603-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.1501222362" id="entry.1501222362" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- C5001-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.189018723" id="entry.189018723" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1101m-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.364445465" id="entry.364445465" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1133-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.612034025" id="entry.612034025" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1133-3x-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.1025061278" id="entry.1025061278" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1133-6x-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.1772857745" id="entry.1772857745" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1101rat-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.273665196" id="entry.273665196" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1133rat-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.1752811353" id="entry.1752811353" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1133rat-3x-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.2023322996" id="entry.2023322996" class="form-control product1-input" placeholder="Prodcut 1"></div>
+          <!-- 1133rat-6x-->
+        <div class="form-group mc-field-group">
+          <input type="hidden" value="" name="entry.1351909614" id="entry.1351909614" class="form-control product1-input" placeholder="Prodcut 1"></div>
+
+       
+        <!-- Total -->
+        <div class="form-group mc-field-group total-input">		
+					<input type="hidden" value="" name="entry.1321278235" id="entry.1321278235" class="form-control" placeholder="Total">
+					<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+				</div>
+
+	<!--			CAPTCHA -->
+				<div class="g-recaptcha" data-sitekey="6Le82EwiAAAAADVD-ShfRZG1l6Yygl7eBSp4pVer"></div>
+     			<br/>
+
+				
+				<div id="mail-status"></div>
+				 
+	<!--				SEND BUTTON-->
+				<div class="clear">
+				<button type="submit" class="btn btn-primary btn-purchase2" id="mc-embedded-subscribe">Order Now</button>
+				<small id="emailHelp2" class="form-text text-muted">(We strive to process your order within one business day, a confirmation email will be send to you)</small>
+				</div>
+			</div>
+			</form>		
+
+      <!-- Hide google form opening in new tab -->
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+		</div>
+				
+	</div>
+<!--END CONTACT FORM	  -->
+
+
+
+
+<!-- Spacer -->
+<div>
+<p>
+ <br>   
+</p>
+</div>
+	
+
+ 
+
+
+
+
+
+<!-- Footer		 -->
         <footer class="main-footer">
             <div class="container main-footer-container">
                 <h3 class="band-name">The Generics</h3>
@@ -135,6 +481,22 @@
                     </li>
                 </ul>
             </div>
+            <footer class="text-center">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>Copyright © MyWebsite. All rights reserved.</p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            
         </footer>
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="js/jquery-3.4.1.min.js"></script>
+          <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap-4.4.1.js"></script>
+        
     </body>
 </html>
