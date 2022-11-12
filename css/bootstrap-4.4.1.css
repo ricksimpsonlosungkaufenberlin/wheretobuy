@@ -10233,7 +10233,7 @@ a.text-dark:hover, a.text-dark:focus {
 /*-------------------*/
 /*-------------------*/
 
-
+/* 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
@@ -10310,14 +10310,14 @@ html, body {
 
 .content-section {
     margin: 1em;
-}
-
+} */
+/* 
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
-}
-.section-header {
+} */
+/* .section-header {
     font-family: "Metal Mania";
     font-weight: normal;
     color: #333;
@@ -10338,7 +10338,7 @@ html, body {
     color: white;
     padding: .25em 0;
 }
-
+/* 
 .main-footer-container {
     display: flex;
     align-items: center;
@@ -10347,8 +10347,8 @@ html, body {
 .main-footer-container ul {
     flex-grow: 1;
     text-align: end;
-}
-
+} */
+/* 
 .footer-nav li {
     padding: 0 .5em;
 }
@@ -10356,7 +10356,7 @@ html, body {
 .footer-nav img {
     width: 30px;
     height: 30px;
-}
+}  */
 
 .btn {
     text-align: center;
@@ -10405,7 +10405,7 @@ html, body {
     background-color: #2D9CDB;
 }
 
-.tour-row {
+/* .tour-row {
     border-bottom: 1px solid black;
     padding-bottom: 1em;
     margin-bottom: 1em;
@@ -10436,7 +10436,7 @@ html, body {
 
 .tour-btn {
     max-width: 19%;
-}
+} */
 
 .shop-item {
     margin: 30px;
