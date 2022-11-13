@@ -237,7 +237,7 @@ function validateEmail() {
        document.getElementById('entry.1270148595').focus() ;
        return false;
     }
-    return(form.submit(), true , redirect() );
+    return(true , redirect() );
  }
 
 //  var valEmail = validateEmail()
