@@ -24,12 +24,52 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
 
+    // function iframedisplay() {
+    //     document.getElementById("hidden_iframe").style.display = "none";
+    // }
+
+    
+
+    // redirect when button is clicked
+    document.getElementById('mc-embedded-subscribe').addEventListener('click', validateEmail)
+    // document.getElementById('mc-embedded-subscribe').addEventListener('click', redirect)
+    
+
     // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     // document.getElementsByClassName('btn-purchase2')[0].addEventListener('click', purchaseClicked2)
     
    }
 
+
+
 // ------------------ TESTING
+
+
+function validateEmail() {
+    var emailID = document.getElementById('entry.1270148595').value;
+    atpos = emailID.indexOf("@");
+    dotpos = emailID.lastIndexOf(".");
+    
+    if (atpos < 1 || ( dotpos - atpos < 2 )) {
+       alert("Please enter correct email ID")
+       document.getElementById('entry.1270148595').focus() ;
+       return false;
+    }
+    // return(true);
+    return(true , setTimeout(redirect,2000) );
+    // return(true , iframedisplay(), redirect() );
+ }
+
+// setTimeout(myFunction, 2000);
+function redirect()
+    {
+        location.href = "thankyou.html";
+        
+        // var url = "index.html";
+        // window.location(url);
+    }
+
+
 function purchaseClicked2() {
     // alert('Thank you for your order')
     // document.getElementById("gform").fadeOut(2000)
@@ -90,13 +130,7 @@ function purchaseClicked2() {
 }
 
 // ------------------ TESTING
-function redirect()
-    {
-        location.href = "thankyou.html";
-        
-        // var url = "index.html";
-        // window.location(url);
-    }
+
 
 
 function purchaseClicked() {
@@ -227,18 +261,9 @@ function updateCartTotal() {
 }
 
 
-function validateEmail() {
-    var emailID = document.getElementById('entry.1270148595').value;
-    atpos = emailID.indexOf("@");
-    dotpos = emailID.lastIndexOf(".");
-    
-    if (atpos < 1 || ( dotpos - atpos < 2 )) {
-       alert("Please enter correct email ID")
-       document.getElementById('entry.1270148595').focus() ;
-       return false;
-    }
-    return(true , redirect() );
- }
+
+
+
 
 //  var valEmail = validateEmail()
 //  console.log('validateEmail', valEmail)
