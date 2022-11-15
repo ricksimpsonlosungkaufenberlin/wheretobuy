@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <script src="store.js" async></script>
-    <script src="assets/js/jquery.min.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
     <script type="text/javascript">var submitted=false;</script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" async></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/"></script>
 
     <title>Bootstrap eCommerce Page Template</title>
     <!-- Bootstrap -->
@@ -358,6 +360,7 @@
 <div id="mc_embed_signup">			
   <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
   <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="hidden_iframe" onsubmit="return validateEmail()">
+  <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="_blank" onsubmit="return validateEmail()"></form> -->
   <div id="mc_embed_signup_scroll">
   <h2>Order Form Name and Address</h2>
   <div class="indicates-required"><span class="asterisk">*</span> required</div><br>
@@ -478,9 +481,13 @@
 </form>		
 
 <!-- Hide google form opening in new tab -->
-<div>
+
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-</div>
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe> -->
+<!-- Safari test NOT WORKING -->
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" allowtransparency="true" style="opacity:0;" onload="if(submitted) {window.location='thankyou.html';}"></iframe> -->
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="position:absolute;left:-1000px;top:0px;visibility:hidden" onload="if(submitted) {window.location='thankyou.html';}"></iframe> -->
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" onload="if(submitted) {window.location='thankyou.html';}"></iframe> -->
 
 </div>
   
