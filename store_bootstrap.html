@@ -73,104 +73,470 @@
               <div class="card-body p-0">
                 <div class="row g-0">
                   <div class="col-lg-8">
-                    <div class="p-5">
+                    <div class="p-5 product-items">
                       <div class="d-flex justify-content-between align-items-center mb-5">
                         <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
                         <h6 class="mb-0 text-muted">3 items</h6>
                       </div>
+
                      <!-- C0501 -->
                      <hr class="my-4">
-                     <div class="row mb-4 d-flex justify-content-between align-items-center">
-                       <div class="col-md-2 col-lg-2 col-xl-2">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
                          <img
                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
                            class="img-fluid rounded-3" alt="Cotton T-shirt">
                        </div>
-                       <div class="col-md-3 col-lg-3 col-xl-3">
-                         <h6 class="text-black">5% CBD Drops</h6>
-                         <h6 class="text-muted mb-0">Hemp Seed Oil</h6>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">5% CBD Drops (10 ml) - Hemp Seed Oil</h6>
                        </div>
-                       <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                         <button class="btn btn-link px-2"
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                            <i class="fas fa-minus"></i>
                          </button>
-                         <input id="form1" min="0" name="quantity" value="0" type="number"
-                           class="form-control form-control-sm" />
-                         <button class="btn btn-link px-2"
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                            <i class="fas fa-plus"></i>
                          </button>
                        </div>
-                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                         <h6 class="mb-0">€ 30.00</h6></div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                        <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                          </div>
                      </div>
 
 
-                      <!-- C0501 -->
-                      <hr class="my-4">
-                      <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <!-- C0502bs -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
                         <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                           class="img-fluid rounded-3" alt="Cotton T-shirt">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">5% CBD Drops (10 ml) - Black Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+    
+                     <!-- C1001nor -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                           class="img-fluid rounded-3" alt="Cotton T-shirt">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10% CBD Drops (10 ml) - Hemp Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€50</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- C1002bs -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                           class="img-fluid rounded-3" alt="Cotton T-shirt">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10% CBD Drops (10 ml) - Black Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€50</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- C2001 -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                           class="img-fluid rounded-3" alt="Cotton T-shirt">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">20% CBD Drops (10 ml) - Hemp Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€99</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- O503 -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                           class="img-fluid rounded-3" alt="Cotton T-shirt">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10 ml RSO Tincture with Hemp Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- A603 -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                           class="img-fluid rounded-3" alt="Cotton T-shirt">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10 ml RSO Tincture with Food Graded Alcohol</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+                    
+
+                      <!-- C5001 -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
                           <img
                             src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
                             class="img-fluid rounded-3" alt="Cotton T-shirt">
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3">
-                          <h6 class="text-muted">Shirt</h6>
-                          <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">50% CBD Oil 10 ml (10 gram) - Full spectrum</h6>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                          <button class="btn btn-link px-2"
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
                             onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                             <i class="fas fa-minus"></i>
                           </button>
-    
-                          <input id="form1" min="0" name="quantity" value="1" type="number"
-                            class="form-control form-control-sm" />
-    
-                          <button class="btn btn-link px-2"
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
                             onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                             <i class="fas fa-plus"></i>
                           </button>
                         </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 class="mb-0">€ 44.00</h6></div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€200</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
                       </div>
-    
+
+                      <!-- 1101m -->
                       <hr class="my-4">
-    
-                      <div class="row mb-4 d-flex justify-content-between align-items-center">
-                        <div class="col-md-2 col-lg-2 col-xl-2">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
                           <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img7.webp"
-                            class="img-fluid rounded-3" alt="Cotton T-shirt"  width="100px">
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3">
-                          <h6 class="text-muted">Shirt</h6>
-                          <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 1 ml (1 gram), 61% RSO and 19% CBD</h6>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                          <button class="btn btn-link px-2"
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
                             onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                             <i class="fas fa-minus"></i>
                           </button>
-    
-                          <input id="form1" min="0" name="quantity" value="1" type="number"
-                            class="form-control form-control-sm" />
-    
-                          <button class="btn btn-link px-2"
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
                             onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                             <i class="fas fa-plus"></i>
                           </button>
                         </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 class="mb-0">€ 44.00</h6>
-                        </div>
-                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                          <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€100</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
                         </div>
                       </div>
-    
+
+                      <!-- 1133 -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 10 ml (10 gram), 61% RSO and 19% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€600</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133-3x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 30 ml (30 gram), 61% RSO and 19% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€1700</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133-3x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 60 ml (60 gram), 61% RSO and 19% CBD</h6>
+                          <h6 class="text-muted">Full Rick Simpson treatment</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€3000</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+
+
+                      <!-- 1101rat -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 1 ml (1 gram), 46% RSO and 46% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€100</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133rat -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 10 ml (10 gram), 46% RSO and 46% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€600</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133rat-3x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 30 ml (30 gram), 46% RSO and 46% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€1700</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133rat-3x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                            class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 60 ml (60 gram), 46% RSO and 46% CBD</h6>
+                          <h6 class="text-muted">Full Rick Simpson treatment</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€3000</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+
+
+
+                     <!-- SUMMARY -->
                       <hr class="my-4">
     
                       <div class="pt-5">
@@ -179,27 +545,26 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="col-lg-4 bg-grey">
                     <div class="p-5">
                       <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
                       <hr class="my-4">
     
-                      <div class="d-flex justify-content-between mb-4">
+                      <!-- <div class="d-flex justify-content-between mb-4">
                         <h5 class="text-uppercase">items 3</h5>
-                        <h5>€ 132.00</h5>
-                      </div>
+                        <h5 class="cart-total-price">€0.00</h5>
+                      </div> -->
     
                       <h5 class="text-uppercase mb-3">Shipping</h5>
     
                       <div class="mb-4 pb-2">
                         <select class="select">
-                          <option value="1">Standard-Delivery- €5.00</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">Four</option>
+                          <option value="1">Standard-Delivery- €14.55</option>
+                          <option value="2">Create your own UPS label- €0</option>
                         </select>
                       </div>
-    
+<!--     
                       <h5 class="text-uppercase mb-3">Give code</h5>
     
                       <div class="mb-5">
@@ -207,18 +572,19 @@
                           <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
                           <label class="form-label" for="form3Examplea2">Enter your code</label>
                         </div>
-                      </div>
+                      </div> -->
     
                       <hr class="my-4">
     
                       <div class="d-flex justify-content-between mb-5">
                         <h5 class="text-uppercase">Total price</h5>
-                        <h5>€ 137.00</h5>
+                        <h5 class="cart-total-price">€0.00</h5>
                       </div>
     
-                      <button type="button" class="btn btn-dark btn-block btn-lg"
-                        data-mdb-ripple-color="dark">Register</button>
-    
+  
+                          <a type="button" class="btn btn-primary btn-block btn-lg" href="#mc_embed_signup" value="" target="">Continue</a>
+  
+
                     </div>
                   </div>
                 </div>
@@ -231,259 +597,6 @@
 
 
     
-
-
-
-
-    <!-- OLD CART         -->
-    <section class="container content-section">
-      <h2 class="section-header">ORDER FORM</h2>
-      <div class="cart-row">
-          <span class="cart-item cart-header cart-column">ITEM</span>
-          <span class="cart-price cart-header cart-column">PRICE</span>
-          <!-- <span class="cart-sku cart-header cart-column">SKU</span> -->
-          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-      </div>
-      <!-- All cart items Adding already on first load-->
-      <div class="cart-items"> 
-          
-          <!-- C0501 -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-              <img class="cart-item-image" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp" width="100" height="100">
-              <span class="cart-item-title">5% CBD Drops - Hemp Seed Oil</span>
-          </div>
-          <span class="cart-price cart-column">€30</span>
-          <!-- <span class="cart-sku cart-column">C0501nor</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- C0502bs -->
-          <div class="cart-row">
-              <div class="cart-item cart-column">
-                  <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-                  <span class="cart-item-title">5% CBD Drops - Black Seed Oil</span>
-              </div>
-              <span class="cart-price cart-column">€30.00</span>
-              <!-- <span class="cart-sku cart-column">C0502bs</span> -->
-              <div class="cart-quantity cart-column">
-              <input class="cart-quantity-input" type="number" value="0">
-              <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-              </div>
-          </div>
-
-          <!-- C1001nor -->
-          <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-                <span class="cart-item-title">10% CBD Drops - Hemp Seed Oil</span>
-            </div>
-            <span class="cart-price cart-column">€50.00</span>
-            <!-- <span class="cart-sku cart-column">C1001nor</span> -->
-            <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="0">
-            <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-            </div>
-          </div>
-
-          <!-- C1002bs -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-              <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-              <span class="cart-item-title">10% CBD Drops - Black Seed Oil</span>
-          </div>
-          <span class="cart-price cart-column">€50.00</span>
-          <!-- <span class="cart-sku cart-column">C1002bs</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- C2001 -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-            <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-            <span class="cart-item-title">20% CBD Drops - Black Seed Oil</span>
-          </div>
-          <span class="cart-price cart-column">€99.00</span>
-          <!-- <span class="cart-sku cart-column">C2001</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- O503 -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">10ml RSO Tincture with Hemp Seed Oil</span>
-          </div>
-          <span class="cart-price cart-column">€30.00</span>
-          <!-- <span class="cart-sku cart-column">O503</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- A603 -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">10ml RSO Tincture with Food Graded Alcohol</span>
-          </div>
-          <span class="cart-price cart-column">€30.00</span>
-          <!-- <span class="cart-sku cart-column">A603</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- C5001 -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">50% CBD Oil 10ml (Full spectrum)</span>
-          </div>
-          <span class="cart-price cart-column">€200.00</span>
-          <!-- <span class="cart-sku cart-column">C5001</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1101m -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 3:1) 1ml, 61% RSO and 19% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€100.00</span>
-          <!-- <span class="cart-sku cart-column">1101m</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1133 -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 3:1) 10ml, 61% RSO and 19% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€600.00</span>
-          <!-- <span class="cart-sku cart-column">1133</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1133-3x -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 3:1) 30ml, 61% RSO and 19% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€1700.00</span>
-          <!-- <span class="cart-sku cart-column">1133-3x</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1133-6x -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 3:1) 60 ml (or 60gram), 61% RSO and 19% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€3000.00</span>
-          <!-- <span class="cart-sku cart-column">1133-6x</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1101rat -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 1:1) 1ml, 46% RSO and 46% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€100.00</span>
-          <!-- <span class="cart-sku cart-column">1101rat</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1133rat -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 1:1) 10ml, 46% RSO and 46% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€600.00</span>
-          <!-- <span class="cart-sku cart-column">1133rat</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1133rat-3x -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 1:1) 30ml, 46% RSO and 46% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€1700.00</span>
-          <!-- <span class="cart-sku cart-column">1133rat-3x</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-
-          <!-- 1133rat-6x -->
-          <div class="cart-row">
-          <div class="cart-item cart-column">
-          <img class="cart-item-image" src="http://127.0.0.1:5500/Images/Cofee.png" width="100" height="100">
-          <span class="cart-item-title">RSO Oil (ratio 1:1) 60 ml (or 60gram), 46% RSO and 46% CBD</span>
-          </div>
-          <span class="cart-price cart-column">€3000.00</span>
-          <!-- <span class="cart-sku cart-column">1133rat-6x</span> -->
-          <div class="cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="0">
-          <!-- <button class="btn btn-danger" type="button">REMOVE</button> -->
-          </div>
-          </div>
-          
-
-      </div>
-      <div class="cart-total">
-          <strong class="cart-total-title">Total</strong>
-          <span class="cart-total-price">€0</span>
-      </div>
-      <!-- <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> -->
-  </section>
-
-<div class="cart-items">    
-</div>
-<!-- END OF CART -->
-
 
 <section>
 <!-- ORDER FORM -->
@@ -599,6 +712,13 @@
     <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
   </div>
 
+  <hr class="my-4">
+    
+  <div class="d-flex justify-content-between mb-5">
+    <h5 class="text-uppercase">Total price</h5>
+    <h5 class="cart-total-price2">€0.00</h5>
+  </div>
+  <hr class="my-4">
 <!--			CAPTCHA -->
   <div class="g-recaptcha" data-sitekey="6Le82EwiAAAAADVD-ShfRZG1l6Yygl7eBSp4pVer"></div>
      <br/>
@@ -608,7 +728,7 @@
    
 <!--				SEND BUTTON-->
   <div class="clear">
-  <button type="submit" class="btn btn-primary btn-purchase2" id="mc-embedded-subscribe">Order Now</button>
+  <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">Order Now</button>
   <small id="emailHelp2" class="form-text text-muted">(We strive to process your order within one business day, a confirmation email will be send to you)</small>
   </div>
 </div>
