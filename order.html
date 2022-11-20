@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <script src="store.js" async></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script type="text/javascript">var submitted=false;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>RSO Products Order Page</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-orange">
+        <img style="margin-right:15px;display:inline-block;height: 40px;" src="images/rso_sphere_logo_75px.png">
+        <a href="https://wa.me/31649968812?text=I'm%20interested%20in%20your%20products,%20can%20I%20receive%20more%20information?" target="_blank" rel="noopener nofollow">
+          <img>
+          <img src="images/whatsapp_100px.jpg" style="margin-right:15px;display:inline-block;height: 40px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+          <li class="nav-item active text-orange">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          
+          <!--			Dropdown Menu-->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          RSO Products</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <!--			 <div class="dropdown-divider"></div>-->
+            <a class="dropdown-item" href="rso_oil_ratio11.html">RSO Oil (ratio 1:1)</a>
+            <a class="dropdown-item" href="rso_oil_ratio31.html">RSO Oil (ratio 3:1)</a>
+            <a class="dropdown-item" href="rso_tinctures.html">RSO Tinctures</a>
+            <a class="dropdown-item" href="cbd_tinctures.html">CBD Tinctures</a>
+            <a class="dropdown-item" href="cbd_concentrates.html">CBD Concentrate</a>
+          </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dosage.html">Dosage</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">ORDER</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+          <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Zoek" aria-label="Search">
+              <button class="btn btn-outline-orange my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    <!--END MENU	  -->
+
+
+
+
+
+
+
+    <!-- NEW CART -->
+    <section class="h-100 h-custom" style="background-color: #d2c9ff;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12">
+            <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <div class="p-5 product-items">
+                      <div class="d-flex justify-content-between align-items-center mb-5">
+                        <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                        <h6 class="mb-0 text-muted">3 items</h6>
+                      </div>
+
+                     <!-- C0501 -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="images/C0501nor_mockup-no-bud-no_bg.png"
+                           class="img-fluid rounded-3" alt="RSO Oil">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">5% CBD Drops (10 ml) - Hemp Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                        <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                          </div>
+                     </div>
+
+
+                      <!-- C0502bs -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="images/C0502bs_mockup-no-bud-no_bg.png"
+                           class="img-fluid rounded-3" alt="RSO Oil">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">5% CBD Drops (10 ml) - Black Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+    
+                     <!-- C1001nor -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="images/C1001nor_mockup-no-bud-no_bg.png"
+                           class="img-fluid rounded-3" alt="RSO Oil">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10% CBD Drops (10 ml) - Hemp Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€50</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- C1002bs -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="images/C1002bs_mockup-no-bud_no-bg.png"
+                           class="img-fluid rounded-3" alt="RSO Oil">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10% CBD Drops (10 ml) - Black Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€50</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- C2001 -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="images/C2001nor_mockup-no-bud-no_bg.png"
+                           class="img-fluid rounded-3" alt="RSO Oil">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">20% CBD Drops (10 ml) - Hemp Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€99</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- O503 -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="images/O503_mockup-no-bud-no_bg.png"
+                           class="img-fluid rounded-3" alt="RSO Oil">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10 ml RSO Tincture with Hemp Seed Oil</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+
+                     <!-- A603 -->
+                     <hr class="my-4">
+                     <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                         <img
+                           src="images/A603_mockup-no-bud-no_bg.png"
+                           class="img-fluid rounded-3" alt="RSO Oil">
+                       </div>
+                        <div class="col-md-4 col-lg-4 col-xl-4">
+                         <h6 class="text-black">10 ml RSO Tincture with Food Graded Alcohol</h6>
+                       </div>
+                       <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                           <i class="fas fa-minus"></i>
+                         </button>
+                         <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                         <button class="btn btn-link px-2 querySelector-button1"
+                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                           <i class="fas fa-plus"></i>
+                         </button>
+                       </div>
+                        <div class="col-md-2 col-lg-2 offset-lg-1">
+                         <h6 class="mb-0 product-price">€30</h6>
+                         <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                     </div>
+                    
+
+                      <!-- C5001 -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/C5001-new-packaging_no-reflection_white-bg-big.jpg"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">50% CBD Oil 10 ml (10 gram) - Full spectrum</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€200</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1101m -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/amsterdam_RSO_oil_1ml.jpg"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 1 ml (1 gram), 61% RSO and 19% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€100</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133 -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/1133-new-packaging_no-reflection_no-bg.png"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 10 ml (10 gram), 61% RSO and 19% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€600</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133-3x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/1133_3x.jpg"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 30 ml (30 gram), 61% RSO and 19% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€1700</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133-6x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/1133_6x.jpg"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 3:1) 60 ml (60 gram), 61% RSO and 19% CBD</h6>
+                          <h6 class="text-muted">Full Rick Simpson treatment</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€3000</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+
+
+                      <!-- 1101rat -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/amsterdam_RSO_oil_1ml.jpg"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 1 ml (1 gram), 46% RSO and 46% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€100</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133rat -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/1133rat-new-packaging_no-reflection_no-bg.png"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 10 ml (10 gram), 46% RSO and 46% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€600</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133rat-3x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/1133rat_3x.jpg"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 30 ml (30 gram), 46% RSO and 46% CBD</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€1700</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+                      <!-- 1133rat-6x -->
+                      <hr class="my-4">
+                      <div class="row mb-4 d-flex justify-content-between align-items-center product-item">
+                         <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="images/1133rat_6x.jpg"
+                            class="img-fluid rounded-3" alt="RSO Oil">
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4">
+                          <h6 class="text-black">RSO Oil (ratio 1:1) 60 ml (60 gram), 46% RSO and 46% CBD</h6>
+                          <h6 class="text-muted">Full Rick Simpson treatment</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="form-control form-control-sm product-quantity-input" id="form1" min="0" name="quantity" value="0" type="number"/>
+                          <button class="btn btn-link px-2 querySelector-button1"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                         <div class="col-md-2 col-lg-2 offset-lg-1">
+                          <h6 class="mb-0 product-price">€3000</h6>
+                          <a type="button" class="btn btn-primary small-button" href="#mc_embed_signup" value="" target="">Order Now</a>  
+                        </div>
+                      </div>
+
+
+
+
+                     <!-- SUMMARY -->
+                      <hr class="my-4">
+    
+                      <div class="pt-5">
+                        <h6 class="mb-0"><a href="#!" class="text-body"><i
+                              class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 bg-grey">
+                    <div class="p-5">
+                      <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                      <hr class="my-4">
+    
+                      <!-- <div class="d-flex justify-content-between mb-4">
+                        <h5 class="text-uppercase">items 3</h5>
+                        <h5 class="cart-total-price">€0.00</h5>
+                      </div> -->
+    
+                      <h5 class="text-uppercase mb-3">Shipping</h5>
+    
+                      <div class="mb-4 pb-2">
+                        <select class="select ship-input2">
+                          <option class="ship-input" value="1">Standard-Delivery- €14.55</option>
+                          <option class="ship-input" value="2">Create your own UPS label- €0</option>
+                        </select>
+                      </div>
+<!--     
+                      <h5 class="text-uppercase mb-3">Give code</h5>
+    
+                      <div class="mb-5">
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea2">Enter your code</label>
+                        </div>
+                      </div> -->
+    
+                      <hr class="my-4">
+    
+                      <div class="d-flex justify-content-between mb-5">
+                        <h5 class="text-uppercase">Total price</h5>
+                        <h5 class="cart-total-price">€0.00</h5>
+                      </div>
+    
+  
+                      <a type="button" class="btn btn-primary btn-block btn-lg" href="#mc_embed_signup" value="" target="">Continue</a>
+  
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+<section>
+<!-- ORDER FORM -->
+<!--CONTACT FORM MAILCHIMP	  -->
+<div class="container">
+<hr>
+
+<div id="mc_embed_signup">			
+  <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
+  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="hidden_iframe" onsubmit="return validateEmail()">
+  <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeVl7BQY7aEcPId0zRqVZHlTNKEO74DmW6dVcZTfSOyjHEifA/formResponse?" target="_blank" onsubmit="return validateEmail()"></form> -->
+  <div id="mc_embed_signup_scroll">
+  <h2>Order Form Name and Address</h2>
+  <div class="indicates-required"><span class="asterisk">*</span> required</div><br>
+
+
+
+
+  <!-- PLACE INPUT FORM -->
+
+     <!-- Name -->
+  <div class="form-group mc-field-group">
+    <label for="mce-FNAME">Name<span class="asterisk">*</span>
+  </label>
+    <input type="text" value="" name="entry.2039904732" id="entry.2039904732" class="form-control name-input"  placeholder="Your Name" required>
+    <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+  </div>
+
+  <!-- Email -->
+  <div class="form-group">
+    <label for="mce-EMAIL">Email<span class="asterisk">*</span></label>
+    <input type="email" value="" name="entry.1270148595" id="entry.1270148595" class="form-control" placeholder="Your Email address" required>
+    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+  </div>
+
+  <!-- Phone -->
+  <div class="form-group mc-field-group size1of2">
+    <label for="mce-PHONE">Phone Number<span class="asterisk">*</span>
+    <input type="text" name="entry.802012483" id="entry.802012483"  class="form-control" value="" placeholder="Your Phone" required>
+    <span id="mce-PHONE-HELPERTEXT" class="helper_text"></span>
+  </div>		
+
+  <!-- Address -->
+  <div class="form-group mc-field-group">
+    <label for="mce-MMERGE10">Shipping Address<span class="asterisk">*</span>
+  </label>
+    <textarea type="text" rows="5" value="" name="entry.2044404204" id="entry.2044404204" class="form-control" placeholder="Your Shipping address" required></textarea>
+    <span id="mce-MMERGE10-HELPERTEXT" class="helper_text"></span>
+  </div>
+
+  <!-- Order Note (optional) -->
+  <div class="form-group mc-field-group">
+    <label for="mce-MMERGE10">Order Note (optional)</label>
+    <textarea type="text" rows="5" value="" name="entry.603949857" id="entry.603949857" class="form-control" placeholder="type here"></textarea>
+    <span id="mce-MMERGE10-HELPERTEXT" class="helper_text"></span>
+  </div>
+
+
+   <!-- -------PRODUCTS HIDDEN ------- -->
+   <!-- C0501nor -->
+  <div class="form-group mc-field-group">
+  <input type="hidden" value="" name="entry.86856500" id="entry.86856500" class="form-control product1-input" placeholder="Prodcut 1"></div>
+  <!-- C0502bs-->
+  <div class="form-group mc-field-group">
+  <input type="hidden" value="" name="entry.935907669" id="entry.935907669" class="form-control product1-input" placeholder="Prodcut 1"></div>
+  <!-- C1001nor-->
+  <div class="form-group mc-field-group">
+  <input type="hidden" value="" name="entry.1537239891" id="entry.1537239891" class="form-control product1-input" placeholder="Prodcut 1"></div>
+  <!-- C1002bs-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.57361277" id="entry.57361277" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- C2001-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.868617270" id="entry.868617270" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- O503-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.655648236" id="entry.655648236" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- A603-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.1501222362" id="entry.1501222362" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- C5001-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.189018723" id="entry.189018723" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1101m-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.364445465" id="entry.364445465" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1133-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.612034025" id="entry.612034025" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1133-3x-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.1025061278" id="entry.1025061278" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1133-6x-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.1772857745" id="entry.1772857745" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1101rat-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.273665196" id="entry.273665196" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1133rat-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.1752811353" id="entry.1752811353" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1133rat-3x-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.2023322996" id="entry.2023322996" class="form-control product1-input" placeholder="Prodcut 1"></div>
+    <!-- 1133rat-6x-->
+  <div class="form-group mc-field-group">
+    <input type="hidden" value="" name="entry.1351909614" id="entry.1351909614" class="form-control product1-input" placeholder="Prodcut 1"></div>
+
+ 
+  <!-- Total inputform Hidden -->
+  <div class="form-group mc-field-group total-input">		
+    <input type="hidden" value="" name="entry.1321278235" id="entry.1321278235" class="form-control" placeholder="Total">
+    <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+  </div>
+  <!-- ship option inputform Hidden -->
+  <div class="form-group mc-field-group ship-input">		
+    <input type="hidden" value="" name="entry.1048430269" id="entry.1048430269" class="form-control" placeholder="Total">
+    <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+  </div>
+
+  <hr class="my-4">
+    
+  <div class="d-flex justify-content-between mb-5">
+    <h5 class="text-uppercase">Total price</h5>
+    <h5 class="cart-total-price2">€0.00</h5>
+  </div>
+  <hr class="my-4">
+<!--			CAPTCHA -->
+  <div class="g-recaptcha" data-sitekey="6Le82EwiAAAAADVD-ShfRZG1l6Yygl7eBSp4pVer"></div>
+     <br/>
+
+  
+  <div id="mail-status"></div>
+   
+<!--				SEND BUTTON-->
+  <div class="clear">
+  <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">Order Now</button>
+  <small id="emailHelp2" class="form-text text-muted">(We strive to process your order within one business day, a confirmation email will be send to you)</small>
+  </div>
+</div>
+</form>		
+
+<!-- Hide google form opening in new tab -->
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+</div>
+  
+</div>
+</section>
+<!--END CONTACT FORM	  -->
+
+
+
+
+<!-- Spacer -->
+<div>
+<p>
+<br>   
+</p>
+</div>
+
+
+
+
+<!--	FOOTER-->
+<footer class="pt-4 my-md-5 border-top bg-dark">
+  <div class="section">
+    <div class="container-fluid">
+      <div class="row">
+
+<!-- Footer bedrijfsinfo -->			
+        <div class="col-md-3 col-12 text-light text-center">
+<!--            <h3 >RSO-Amsterdam</h3>-->
+          <div class="">
+      <img style="margin-left:-10px;height: 60px;" src="images/rso_sphere_logo_75px.png">
+    </div>
+     <br>
+        </div>			
+    
+<!--Footer Wie zijn we?			-->
+        <div class="col-md-3 col-12 text-light">
+<!--            <h3 class="text-center">Wie zijn we?</h3>-->
+                <div class="text-orange icon icon_phone footer_contact-icon icon_phone">
+      <img style="margin-right:15px;display:inline-block;height: 20px; width: 20px;" src="images/icon-email.svg">
+            <a class="text-orange" href="mailto:info@rso-amsterdam.com">Email: info@rso-amsterdam.com</a><br>
+    </div>
+    <div class="text-orange icon icon_phone footer_contact-icon icon_phone">
+      <img style="margin-right:15px;display:inline-block;" src="images/icon-phone.svg">
+      <a class="text-orange" href="tel:+06 477 402 76"><span class="icon icon_phone footer_contact-icon icon.icon_phone"></span>Tel: 06 477 402 76</a>
+      </div>
+             <br>
+      <ul class="list-unstyled text-small">
+          <li class="text-muted"><a style="color:#fd7e14;" href="contact.html">CONTACT</a></li>
+              </ul>
+    </div>
+    
+    
+<!-- Footer: Links -->
+  <div class="col-md-3 col-12 text-light">
+        <h5 class="text-uppercase">PRODUCTS</h5>
+
+        <ul class="text-small text-orange">
+    
+    <li class="text-muted"><a class="text-orange" href="rso_oil_ratio11.html">RSO Oil (ratio 1:1</a></li>
+    <li class="text-muted"><a class="text-orange" href="rso_oil_ratio31.html">RSO Oil (ratio 3:1)</a></li>
+    <li class="text-muted"><a class="text-orange" href="rso_tinctures.html">RSO Tinctures</a></li>
+    <li class="text-muted"><a class="text-orange" href="cbd_tinctures.html">CBD Tinctures</a></li>
+    <li class="text-muted"><a class="text-orange" href="cbd_concentrates.html">CBD Concentrate</a></li>
+
+      
+      </ul>
+  </div>
+    
+    
+  <div class="col-md-3 col-12 text-light">
+        <h5 class="text-uppercase">RSO-Amsterdam</h5>
+
+        <ul class="text-small text-orange">
+    
+    <li class="text-muted"><a class="text-orange" href="index.html">Home</a></li>
+    <li class="text-muted"><a class="text-orange" href="dosage.html">Dosage</a></li>
+    <li class="text-muted"><a class="text-orange" href="database.html">Cannabis Research Database</a></li>
+    <li class="text-muted"><a class="text-orange" href="preliminaryresults.html">Preliminary Results</a></li>
+    <li class="text-muted"><a class="text-orange" href="shipment.html">Shipment</a></li>
+    <li class="text-muted"><a class="text-orange" href="refund.html">Refunds</a></li>
+    <li class="text-muted"><a class="text-orange" href="terms.html">Terms</a></li>
+      <li class="text-muted"><a class="text-orange" href="faq.html">FAQ</a></li>
+    <li class="text-muted"><a class="text-orange" href="contact.html">Contact</a>
+        </li>  
+    
+      </ul>
+  </div>
+        
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+<!--	COOKIES FOOTER		-->
+  <section>
+<div class="container" style="border-radius: 0;">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 text-light">
+          <p>Copyright 2022 © RSO-Amsterdam. All rights reserved.</p>
+        </div>
+
+    <div class="col-sm-12 col-md-4 text-small">
+     <ul class="list-group list-group-horizontal list-group-flush" style="font-size: .675rem;">
+<!--		     <ul class="list-group list-group-horizontal footer-links">-->
+        <li class="list-group-item flex-fill bg-transparent"><a href="disclaimer.html" class="text-light">DISCLAIMER</a></li>
+        <li class="list-group-item flex-fill bg-transparent"><a href="privacy.html" class="text-light">PRIVACY STATEMENT</a></li>
+        <li class="list-group-item flex-fill bg-transparent"><a href="cookies.html" class="text-light">COOKIES POLICY</a></li>
+       
+    </ul>
+    </div>
+ 
+       </div>
+    </div>
+  </section>
+  
+
+   
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  <!-- <script src="js/bootstrap-5.js"></script> -->
+</body>
+</html>

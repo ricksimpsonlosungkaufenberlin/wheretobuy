@@ -25,22 +25,79 @@ function ready() {
         input.addEventListener('click', quantityChanged2)
     }
 
-    // function iframedisplay() {
-    //     document.getElementById("hidden_iframe").style.display = "none";
-    // }
-
-    
 
     // redirect when button is clicked
     document.getElementById('mc-embedded-subscribe').addEventListener('click', validateEmail)
     
-    
+
+
+
+    // // Adding product as text on bottom of form 
+    // var addToCartButtons = document.getElementsByClassName('cart-quantity-input')
+    // for (var i = 0; i < quantityInputs.length; i++) {
+    //     var input = quantityInputs[i]
+    //     input.addEventListener('change', addToCartClicked)
+    //     // button.addEventListener('click', addToCartClicked)
+    // }
+
+   
     
 }
 
 
 
 // ------------------ TESTING
+
+
+// function addToCartClicked(event) {
+//     var button = event.target
+//     var shopItem = button.parentElement.parentElement
+//     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+//     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+//     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+//     addItemToCart(title, price, imageSrc)
+//     updateCartTotal()
+// }
+
+
+// //Adding items to Cart
+// function addItemToCart(title, price, imageSrc) {
+//     var cartRow = document.createElement('div')
+//     cartRow.classList.add('cart-row')
+//     var cartItems = document.getElementsByClassName('cart-items')[0]
+//     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+//     for (var i = 0; i < cartItemNames.length; i++) {
+//         if (cartItemNames[i].innerText == title) {
+//             alert('This item is already added to the cart')
+//             return
+//         }
+//     }
+//     var cartRowContents = `
+//         <div class="cart-item cart-column">
+//             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+//             <span class="cart-item-title">€{title}</span>
+//         </div>
+//         <span class="cart-price cart-column">${price}</span>
+//         <div class="cart-quantity cart-column">
+//             <input class="cart-quantity-input" type="number" value="1">
+//             <button class="btn btn-danger" type="button">REMOVE</button>
+//         </div>
+
+//             <hr class="my-4">
+//             <div class="d-flex justify-content-between mb-5">
+//                 <h5 class="text-uppercase">Total price</h5>
+//                 <h5 class="cart-total-price2">€0.00</h5>
+//             </div>
+//             <hr class="my-4">
+//         `
+//     cartRow.innerHTML = cartRowContents
+//     cartItems.append(cartRow)
+//     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+//     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+// }
+
+
+
 
 
 function validateEmail() {
@@ -53,8 +110,16 @@ function validateEmail() {
        document.getElementById('entry.1270148595').focus() ;
        return false;
     }
+    var Name = document.getElementById('entry.2039904732').value;
+    var Phone = document.getElementById('entry.802012483').value;
+    var Address = document.getElementById('entry.2044404204').value;
+    if (String(Name) < 1 || String(Phone) < 1 || String(Address) < 1) {
+        alert("Missing or incorrect input")
+        document.getElementById('entry.2039904732').focus() ;
+        return false;
+     }
     // return(true);
-    return(true , setTimeout(redirect,2000) );
+    return(true , setTimeout(redirect,1000) );
     // return(true , iframedisplay(), redirect() );
  }
 
@@ -109,7 +174,16 @@ function quantityChanged2(event) {
     updateCartTotal2()
 }
 
+function shipOption() {
+    var ship = document.getElementsByClassName('ship-input2')[0].value
+    if ( ship= 1) {
+    document.getElementById('entry.1048430269').value = String("standard post")
+    }
+    if (ship = 2) {
+        document.getElementById('entry.1048430269').value = String("Create own UPS label")
+        }
 
+    }  
 
 
 
@@ -176,7 +250,7 @@ function updateCartTotal2() {
     // Total value
     document.getElementById('entry.1321278235').value = String(total2)
     
-
-
-
+    // Shipping option
+    shipOption()
+    
 }
